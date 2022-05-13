@@ -24,11 +24,23 @@ body {
     font-size: 21px;
     font-family: 'Bungee', cursive;
   }
-  h4 #clock {
+
+  .title {
+    color: #fff;
+  }
+
+  #clock {
     font-size: 36px;
     display: block;
     padding: 5px 0px;
   }
+
+  #calendar {
+    font-size: 36px;
+    display: block;
+    padding: 5px 0px;
+  }
+
   h1, h2, h3, h6 {
     font-family: 'Bungee Shade', cursive;
   }
