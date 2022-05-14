@@ -1,6 +1,8 @@
 var $ = document.querySelector.bind(document);
 var $$ = document.querySelectorAll.bind(document);
 
+var showTimeBtn = $('#show-time-btn')
+
 function showClock() {
     var clock = $('#clock')
     var calendar = $('#calendar')
@@ -34,14 +36,20 @@ function showClock() {
     const toDay = day + '-' + month + '-' + year;
 
     clock.innerText = timeNow
-
+    
     calendar.innerText = toDay
 }
 
 
-function updateClock() {
+
+
+showTimeBtn.onclick = () => {
     
-    showClock()
+    function updateClock() {
+        
+        showClock()
+    }
+    setInterval(updateClock, 1000)
+    
 }
 
-setInterval(updateClock, 1000)
